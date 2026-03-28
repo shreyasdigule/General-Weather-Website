@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.6s ease-in-out, background-color 0.6s;
+}
+
+/* Main card */
+.container {
+  width: 340px;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(15px);
+  box-shadow: 
+    0 8px 32px rgba(0,0,0,0.3),
+    0 0 20px rgba(255,255,255,0.1);
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h4 {
+  margin-top: 15px;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 10px;
+}
+
+/* Input */
+input {
+  width: 70%;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 10px;
+
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+/* Buttons */
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+.container {
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+}
+/* Search button */
+button:first-of-type {
+  background: #4fc3f7;
+  color: black;
+}
+
+/* Clear button */
+.clear-btn {
+  background: #ff5252;
+  color: white;
+}
+
+.clear-btn:hover {
+  background: #ff1744;
+}
+
+/* Weather text */
+#temp {
+  font-size: 2rem;
+  margin: 10px 0;
+}
+
+#condition {
+  font-size: 1.1rem;
+  opacity: 0.9;
+}
+
+#temp {
+  font-size: 2.8rem;
+  font-weight: 600;
+}
+
+#condition {
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+
+/* History */
+ul {
+  list-style: none;
+  padding: 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+li {
+  padding: 6px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  font-size: 0.95rem;
+}
+
+/* Scrollbar (nice touch) */
+ul::-webkit-scrollbar {
+  width: 6px;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.3);
+  border-radius: 10px;
+}
